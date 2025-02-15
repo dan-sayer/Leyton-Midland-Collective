@@ -107,11 +107,11 @@ p {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     body {
-        background-size: 330% 330%;
+        background-size: 400% 400%;
     }
 
     .logo {
-        max-width: 400px;
+        max-width: 350px;
         margin: 70px auto 120px auto;
     }
 
@@ -133,24 +133,24 @@ p {
     }
 
     .title {
-        max-width: 400px;
+        max-width: 350px;
         margin: 150px auto 10px auto;
     }
 
     p {
         font-size: 26px;
-        width: 400px;
+        width: 350px;
         margin: 20px auto 60px auto;
     }
 
     .buttons {
         align-items: center;
-        gap: 20px;
+        gap: 10px;
         margin: 40px 0 80px 0;
     }
 
     .buttons a {
-        width: 100px;
-        font-size: 22px;
+        width: 50px;
+        font-size: 18px;
     }
 }
