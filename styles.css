@@ -107,17 +107,18 @@ p {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     body {
-        background-size: 450% 450%;
+        background-size: cover;
     }
 
     .logo {
         max-width: 350px;
-        margin: 70px auto 120px auto;
+        margin: 80px auto 80px auto;
     }
 
     .images img {
         width: 100%;
         max-width: 300px;
+        border: 3px solid black;
     }
 
     .image1 {
@@ -152,5 +153,6 @@ p {
     .buttons a {
         width: 80px;
         font-size: 18px;
+        border: 3px solid black;
     }
 }
