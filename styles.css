@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body {
+    background-image: url('./assets/Background.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    /* background: white; */
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    max-width: 800px;
+    margin: 60px auto;
+    transform: rotate(2deg);
+}
+
+img {
+    height: auto; /* Keeps aspect ratio */
+}
+
+.images {
+    position: relative; /* Makes sure absolute images stay within this section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px; /* Adds enough space so content below is not overlapped */
+}
+
+.images img {
+    position: absolute;
+    border-radius: 10px;
+    border: 5px solid black;
+    width: 600px; /* Adjust image size */
+    height: auto;
+}
+
+/* Adjusted positions to stay within `.images` container */
+.image1 {
+    top: 100px;
+    left: -250px; /* Moves image slightly left */
+    transform: rotate(-8deg);
+}
+
+.image2 {
+    top: -30px;
+    right: -250px; /* Moves image slightly right */
+    transform: rotate(5deg);
+}
+ 
+.title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 150px auto 20px auto;
+}
+
+p {
+    font-size: 36px;
+    line-height: 1.6;
+    width: 600px;
+    margin: 30px auto 50px auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 70px 0 100px 0;
+}
+
+.buttons a {
+    display: inline-flex; /* Makes sure text is properly centered */
+    align-items: center;
+    justify-content: center;
+    width: 160px; /* Set a fixed width for all buttons */
+    height: 55px; /* Set a fixed height to keep them uniform */
+    border: 5px solid black;
+    text-decoration: none;
+    color: black;
+    /* font-weight: bold; */
+    border-radius: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.buttons a:hover {
+    background: black;
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    body {
+        background-size: 330% 330%;
+    }
+
+    .logo {
+        max-width: 550px;
+        margin: 70px auto 120px auto;
+    }
+
+    .images img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .image1 {
+        top: 200px;
+        left: -30px; /* Moves image slightly left */
+        transform: rotate(-8deg);
+    }
+    
+    .image2 {
+        top: -90px;
+        right: -40px; /* Moves image slightly right */
+        transform: rotate(5deg);
+    }
+
+    .title {
+        max-width: 600px;
+        margin: 150px auto 10px auto;
+    }
+
+    p {
+        font-size: 26px;
+        width: 520px;
+        margin: 20px auto 60px auto;
+    }
+
+    .buttons {
+        align-items: center;
+        gap: 20px;
+        margin: 40px 0 80px 0;
+    }
+
+    .buttons a {
+        width: 150px;
+        font-size: 22px;
+    }
+}
