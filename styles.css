@@ -89,7 +89,7 @@ p {
     display: inline-flex; /* Makes sure text is properly centered */
     align-items: center;
     justify-content: center;
-    width: 160px; /* Set a fixed width for all buttons */
+    width: 120px; /* Set a fixed width for all buttons */
     height: 55px; /* Set a fixed height to keep them uniform */
     border: 5px solid black;
     text-decoration: none;
